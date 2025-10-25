@@ -15,12 +15,16 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 30px;
+            /* This is now the full-width white section */
             background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 30px 20px; /* Adds top/bottom space, and side padding for small screens */
+            width: 100%;
+            box-sizing: border-box; /* Ensures padding doesn't break layout */
+        }
+        .content-wrapper {
+            /* This new class centers your content */
+            max-width: 800px;
+            margin: 0 auto; /* Centers the block */
             text-align: center;
         }
         h1 {
